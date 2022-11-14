@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>
+          Firebase Blog
+        </title>
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/gif" href="images/leaf-ga-logo-bg.png">
+
+        <link rel="stylesheet" type="text/css" href="css/post.css">
+        <script type="module" src="/js/posting.js" defer></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+    
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </head>
+
+    <body>
+        <div class="banner">
+            <img id="bannerimg" class="banner-img" src="/images/placeholder.jpg">
+
+            <label for="inputlink" class="input-link-label">
+                <input id="inputlink" class="input-link" placeholder="https://i.ibb.co/......./.......">
+            </label>
+
+            <script defer>
+                inputlink.onchange = evt => {
+                    var inputVal = document.getElementById("inputlink").value;
+
+                    document.getElementById("bannerimg").src=inputVal;
+                }
+            </script>
+        </div>
+
+        <div class="blog">
+            <input type="text" class="title" id="title-txt" placeholder="Title..."></input>
+            <textarea type="text" class="article" id="text-txt" placeholder="Begin writing..."></textarea>
+        </div>
+
+        <div class="blog-options">
+            <button id="submit" class="btn">Publish</button>
+        </div>
+    </body>
+</html>

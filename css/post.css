@@ -1,0 +1,136 @@
+:root {
+    --clr-bg: #0d195c;
+    --clr-upload-bg: rgba(0, 0, 0, 0.1);
+    --clr-banner-bg: #182881;
+    --clr-font: #ffffff;
+}
+
+/* Main */
+
+body {
+    background-color: var(--clr-bg);
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Text Area */
+
+blog{
+    width: 70vw;
+    min-width: 400px;
+    height: 100px;
+    display: block;
+    margin: auto;
+    padding: 50px 0;
+}
+
+textarea::-webkit-scrollbar{
+    width: 10px;
+}
+
+.title,
+.article {
+    text-align: center;
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    outline: none;
+    font-size: 50px;
+    font-weight: 600;
+    color: var(--clr-font);
+    background-color: var(--clr-bg);
+    resize: none;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.title::placeholder,
+.article::placeholder{
+    color: var(--clr-font);
+}
+
+.article{
+    height: 500px;
+    font-size: 20px;
+    margin-top: 0px;
+    line-height: 30px;
+    font-weight: 500;
+    padding-bottom: 100px;
+    white-space: pre-wrap;
+}
+
+#title-txt {
+    margin-top: 4vh;
+}
+
+
+/* Banner  & Upload */
+
+.input-link {
+    padding: 1vh;
+    border-radius: 2vh;
+    border: solid white;
+    margin: auto;
+    margin-top: 1vh;
+    display: flex;
+}
+
+
+.banner{
+    position: relative;
+    margin-top: 1%;
+    margin-left: 1%;
+    height: 63vh;
+}
+
+.banner-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    position: relative;
+    margin-bottom: 0;
+    height: 100%;
+}
+
+.banner-upload-btn {
+    display: inline-block;
+    margin: auto;
+    margin-top: 0.5%;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    background: var(--clr-upload-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.banner-upload-btn img {
+    width: 20px;
+}
+
+.blog-options {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    background-color: var(--clr-banner-bg);
+    padding: 1%;
+    border-radius: 10vw;
+    color: var(--clr-font);
+    font-family: monospace;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}

@@ -1,0 +1,295 @@
+:root {
+    --clr-bg: #0d195c;
+    --clr-card-bg: #182881;
+    --clr-card-btn: #2a3ca3;
+    --clr-font: #ffffff;
+}
+
+/* Main */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  background-color: var(--clr-bg);
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.svg-span {
+  vertical-align:text-top;
+}
+
+#backbtn {
+  color: var(--clr-font);
+  padding: 8px 15px 6px 15px;
+  background-color: var(--clr-card-btn);
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 2rem;
+  margin-left: 3vw;
+  margin-top: 5vh;
+  margin-bottom: 0.1vh;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  transition: all 300ms ease;
+}
+
+#backbtn:hover {
+  cursor: pointer;
+  box-shadow: none;
+  margin-top: 5.1vh;
+  margin-bottom: 0vh;
+}
+
+#backbtn:active {
+  cursor: pointer;
+  background-color: #a1a9d3;
+}
+
+.icon {
+  font-size: 1.1rem;
+  padding: 0;
+}
+
+.article-container {
+    width: 100vw;
+    background-color: var(--clr-bg);
+    z-index: 3;
+    position: relative;
+}
+
+#article-wrapper {
+  display: none;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.blog {
+  width: 70vw;
+  min-width: 400px;
+  display: block;
+  margin: auto;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.title,
+.article{
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  outline: none;
+  font-size: 50px;
+  font-weight: 600;
+  color: var(--clr-font);
+  background-color: var(--clr-bg);
+  resize: none;
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.title {
+  text-align: center;
+  padding-top: 0;
+  padding-left: 15px;
+}
+
+.title::placeholder,
+.article::placeholder{
+  color: var(--clr-font);
+}
+
+.published{
+  text-align: center;
+  padding: 0 20px;
+  margin-bottom: 0.5%;
+  text-transform: capitalize;
+  color: var(--clr-font);
+  font-size: 1.1rem;
+}
+
+.published span{
+  font-weight: 700;
+  font-style: normal;
+}
+
+.article{
+  text-align: left;
+  font-size: 20px;
+  width: 95%;
+  margin-top: 10px;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  line-height: 30px;
+  font-weight: 500;
+  padding-bottom: 100px;
+}
+
+
+/* Banner  & Upload */
+
+.banner{
+  position: relative;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-bottom: 0;
+  height: 55vh;
+}
+
+.banner-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  position: relative;
+  margin-bottom: 0;
+  height: 100%;
+}
+
+
+
+
+
+
+
+.main-container {
+    align-items: center;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+    margin-block: 2rem;
+    gap: 2rem;
+}
+
+#readbtn {
+    position: relative;
+    align-items: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--clr-card-btn);
+    border: None;
+    padding: 2%;
+    border-radius: 10px;
+    margin-bottom: 4%;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    color: var(--clr-font);
+    overflow: hidden;
+    transition: all 300ms ease;
+}
+
+#readbtn::before,
+#readbtn::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+}
+
+#readbtn:after {
+  width: 225%;
+  height: 225%;
+  left: -225%;
+  transform: rotate(45deg);
+  background-color: #6874af;
+  transition: all 300ms ease;
+}
+
+#readbtn:hover {
+  color: #fff;
+  z-index: 10;
+  font-weight: 600;
+}
+
+#readbtn:hover::after {
+  left: -100%;
+}
+
+#readbtn:hover {
+    cursor: pointer;
+}
+
+#container {
+    margin-top: 1vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.txt {
+    color: var(--clr-font);
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+}
+
+.card {
+    margin: 10px;
+    background-color: var(--clr-card-bg);
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+}
+
+.card-header img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    min-height: 250px;
+}
+
+.card-body p {
+    font-size: 13px;
+    margin: 0 0 40px;
+}
+
+#card-title {
+    margin-bottom: 2%;
+}
+
+.user {
+    display: flex;
+    margin-top: auto;
+}
+
+.user img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.user-info h5 {
+    margin: 0;
+}
+
+.user-info small {
+    color: var(--clr-font);
+}
