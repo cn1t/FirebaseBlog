@@ -1,7 +1,6 @@
 ## Deployment
 
-To start using this project, you only have to go into the .js files and
-paste your firebase config like here:
+To deploy the blog you will have to add the following code to every java script file in the `js/` folder.
 
 ```js
   var firebaseConfig = {
