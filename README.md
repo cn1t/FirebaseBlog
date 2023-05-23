@@ -1,3 +1,7 @@
+# Firebase Blog Template
+
+This is a template for a blog system fully working with firebase.
+
 ## Deployment
 
 To deploy the blog you will have to add the following code to every java script file in the `js/` folder.
