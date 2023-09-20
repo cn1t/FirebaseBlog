@@ -1,6 +1,7 @@
 # Firebase Blog Template
 
 This is a simple template for a quick and easy blog system fully working with firebase.
+Will be updated soon and include firebase rules!
 
 ## Deployment
 
